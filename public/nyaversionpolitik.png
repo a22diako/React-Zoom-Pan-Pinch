@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://localhost:3000/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="" src="./nyaversionpolitik_files/bundle.js.nedladdning"></script><style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsICdPeHlnZW4nLFxuICAgICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJywgJ0hlbHZldGljYSBOZXVlJyxcbiAgICBzYW5zLXNlcmlmO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgIG1vbm9zcGFjZTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>/* Styling för header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.header-image {
+  height: 60px;
+}
+
+.header-dateTime {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+/* Styling för navbar */
+.navbar {
+  background-color: #B90E0A;
+  padding: 10px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #9e0d0b;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Styling för main content */
+.main-content {
+  display: flex;
+  justify-content: space-between; /* Justerar för att ha tre kolumner (vänster, mitt, höger) */
+  gap: 15px; /* Mellanrum mellan kolumnerna */
+  padding: 20px;
+  flex-wrap: wrap; /* Gör att kolumnerna får plats på olika rader vid mindre skärmstorlekar */
+}
+
+/* Styling för vänstra kolumnen */
+.left-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 200;
+  flex: 2 1; /* Vänster kolumn tar mer plats */
+}
+
+/* Styling för mittkolumnen (avlång) */
+.middle-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1; /* Mittkolumnen tar mindre plats än vänster men mer än höger */
+  min-height: 500px; /* Sätter en minimi höjd för att göra kolumnen avlång */
+}
+
+/* Styling för högra kolumnen */
+.right-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1; /* Högra kolumnen tar mindre plats */
+}
+
+/* Justering av korten */
+.card {
+  width: 100%; /* Korten ska fylla hela kolumnens bredd */
+  max-width: 600px; /* Sätter en maxbredd för korten */
+  margin: 15px 0;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Lätt ram för en mer stilren look */
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd; /* Tydligare separation mellan bild och text */
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin: 10px 15px;
+  font-weight: bold;
+  color: #333;
+  transition: border-bottom 0.3s ease; /* För att skapa en smidig övergång för linjen */
+}
+
+/* Hover-effekt för att lägga till en linje under titeln */
+.card-title:hover {
+  border-bottom: 2px solid #B90E0A; /* Lägger till en linje under titeln vid hover */
+}
+
+.card-description {
+  padding: 0 15px 15px;
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Styling för footer */
+.footer {
+  padding: 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.sport-content {
+  padding: 20px;
+}
+
+.header-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  color: #333;
+}
+
+.large-text {
+  font-family: 'Verdana', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.medium-text {
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.small-text {
+  font-family: 'Times New Roman', serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #666;
+}
+
+.bold-text {
+  font-family: 'Courier New', monospace;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.italic-text {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #777;
+}
+
+/* Styling för bilder och zoomfunktion */
+.transform-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Förhindrar att innehållet rinner utanför */
+}
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-controls button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Styling för vänstra kolumnen bilder */
+.left-column .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* För att säkerställa att bilderna täcker hela utrymmet utan att förvrängas */
+}
+
+.news-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.news-table th, .news-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.news-table th {
+  background-color: #f2f2f2;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHVCQUF1QjtBQUN2QjtFQUNFLGFBQWE7RUFDYiw4QkFBOEI7RUFDOUIsbUJBQW1CO0VBQ25CLGFBQWE7RUFDYix5QkFBeUI7QUFDM0I7O0FBRUE7RUFDRSxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLGlCQUFpQjtFQUNqQix5QkFBeUI7QUFDM0I7O0FBRUEsdUJBQXVCO0FBQ3ZCO0VBQ0UseUJBQXlCO0VBQ3pCLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGFBQWE7RUFDYixnQkFBZ0I7RUFDaEIsVUFBVTtFQUNWLFNBQVM7RUFDVCxTQUFTO0FBQ1g7O0FBRUE7RUFDRSxZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osa0JBQWtCO0FBQ3BCOztBQUVBLDZCQUE2QjtBQUM3QjtFQUNFLGFBQWE7RUFDYiw4QkFBOEIsRUFBRSw0REFBNEQ7RUFDNUYsU0FBUyxFQUFFLGdDQUFnQztFQUMzQyxhQUFhO0VBQ2IsZUFBZSxFQUFFLDBFQUEwRTtBQUM3Rjs7QUFFQSxpQ0FBaUM7QUFDakM7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLGNBQWM7RUFDZCxTQUFPLEVBQUUsaUNBQWlDO0FBQzVDOztBQUVBLHNDQUFzQztBQUN0QztFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsU0FBTyxFQUFFLDhEQUE4RDtFQUN2RSxpQkFBaUIsRUFBRSx1REFBdUQ7QUFDNUU7O0FBRUEsK0JBQStCO0FBQy9CO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixTQUFPLEVBQUUsb0NBQW9DO0FBQy9DOztBQUVBLHdCQUF3QjtBQUN4QjtFQUNFLFdBQVcsRUFBRSwwQ0FBMEM7RUFDdkQsZ0JBQWdCLEVBQUUsa0NBQWtDO0VBQ3BELGNBQWM7RUFDZCx5QkFBeUI7RUFDekIsa0JBQWtCO0VBQ2xCLHNCQUFzQixFQUFFLHFDQUFxQztFQUM3RCxnQkFBZ0I7RUFDaEIsc0NBQXNDO0FBQ3hDOztBQUVBO0VBQ0Usc0JBQXNCO0FBQ3hCOztBQUVBO0VBQ0UsV0FBVztFQUNYLGFBQWE7RUFDYixpQkFBaUI7RUFDakIsNkJBQTZCLEVBQUUsOENBQThDO0FBQy9FOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtFQUNqQixpQkFBaUI7RUFDakIsV0FBVztFQUNYLG1DQUFtQyxFQUFFLGdEQUFnRDtBQUN2Rjs7QUFFQSwwREFBMEQ7QUFDMUQ7RUFDRSxnQ0FBZ0MsRUFBRSxnREFBZ0Q7QUFDcEY7O0FBRUE7RUFDRSxvQkFBb0I7RUFDcEIsV0FBVztFQUNYLGdCQUFnQjtBQUNsQjs7QUFFQSx1QkFBdUI7QUFDdkI7RUFDRSxhQUFhO0VBQ2IseUJBQXlCO0VBQ3pCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGdDQUFnQztFQUNoQyxlQUFlO0VBQ2YsV0FBVztBQUNiOztBQUVBO0VBQ0Usa0NBQWtDO0VBQ2xDLGlCQUFpQjtFQUNqQixnQkFBZ0I7RUFDaEIsV0FBVztBQUNiOztBQUVBO0VBQ0UsNkJBQTZCO0VBQzdCLGlCQUFpQjtFQUNqQixnQkFBZ0I7RUFDaEIsV0FBVztBQUNiOztBQUVBO0VBQ0UscUNBQXFDO0VBQ3JDLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsV0FBVztBQUNiOztBQUVBO0VBQ0UscUNBQXFDO0VBQ3JDLGlCQUFpQjtFQUNqQixpQkFBaUI7RUFDakIsV0FBVztBQUNiOztBQUVBO0VBQ0Usb0NBQW9DO0VBQ3BDLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsV0FBVztBQUNiOztBQUVBLHdDQUF3QztBQUN4QztFQUNFLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsWUFBWTtFQUNaLGdCQUFnQixFQUFFLDZDQUE2QztBQUNqRTs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1YsZ0JBQWdCO0VBQ2hCLGNBQWM7RUFDZCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtFQUNaLDZCQUE2QjtBQUMvQjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixRQUFRO0VBQ1IsV0FBVztFQUNYLGFBQWE7RUFDYiw4QkFBOEI7RUFDOUIsMkJBQTJCO0FBQzdCOztBQUVBO0VBQ0Usb0NBQW9DO0VBQ3BDLFlBQVk7RUFDWixZQUFZO0VBQ1osYUFBYTtFQUNiLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxvQ0FBb0M7QUFDdEM7O0FBRUEsd0NBQXdDO0FBQ3hDO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixpQkFBaUIsRUFBRSw4RUFBOEU7QUFDbkc7O0FBRUE7RUFDRSxXQUFXO0VBQ1gseUJBQXlCO0VBQ3pCLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixnQkFBZ0I7RUFDaEIsc0JBQXNCO0FBQ3hCOztBQUVBO0VBQ0UseUJBQXlCO0FBQzNCIiwic291cmNlc0NvbnRlbnQiOlsiLyogU3R5bGluZyBmw7ZyIGhlYWRlciAqL1xuLmhlYWRlciB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgcGFkZGluZzogMTBweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjtcbn1cblxuLmhlYWRlci1pbWFnZSB7XG4gIGhlaWdodDogNjBweDtcbn1cblxuLmhlYWRlci1kYXRlVGltZSB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmZmZmO1xufVxuXG4vKiBTdHlsaW5nIGbDtnIgbmF2YmFyICovXG4ubmF2YmFyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI0I5MEUwQTtcbiAgcGFkZGluZzogMTBweDtcbn1cblxuLm5hdi1saXN0IHtcbiAgZGlzcGxheTogZmxleDtcbiAgbGlzdC1zdHlsZTogbm9uZTtcbiAgcGFkZGluZzogMDtcbiAgbWFyZ2luOiAwO1xuICBnYXA6IDE1cHg7XG59XG5cbi5uYXYtbGluayB7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbn1cblxuLm5hdi1saW5rOmhvdmVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzllMGQwYjtcbiAgcGFkZGluZzogNXB4O1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG59XG5cbi8qIFN0eWxpbmcgZsO2ciBtYWluIGNvbnRlbnQgKi9cbi5tYWluLWNvbnRlbnQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47IC8qIEp1c3RlcmFyIGbDtnIgYXR0IGhhIHRyZSBrb2x1bW5lciAodsOkbnN0ZXIsIG1pdHQsIGjDtmdlcikgKi9cbiAgZ2FwOiAxNXB4OyAvKiBNZWxsYW5ydW0gbWVsbGFuIGtvbHVtbmVybmEgKi9cbiAgcGFkZGluZzogMjBweDtcbiAgZmxleC13cmFwOiB3cmFwOyAvKiBHw7ZyIGF0dCBrb2x1bW5lcm5hIGbDpXIgcGxhdHMgcMOlIG9saWthIHJhZGVyIHZpZCBtaW5kcmUgc2vDpHJtc3Rvcmxla2FyICovXG59XG5cbi8qIFN0eWxpbmcgZsO2ciB2w6Ruc3RyYSBrb2x1bW5lbiAqL1xuLmxlZnQtY29sdW1uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgbWF4LXdpZHRoOiAyMDA7XG4gIGZsZXg6IDI7IC8qIFbDpG5zdGVyIGtvbHVtbiB0YXIgbWVyIHBsYXRzICovXG59XG5cbi8qIFN0eWxpbmcgZsO2ciBtaXR0a29sdW1uZW4gKGF2bMOlbmcpICovXG4ubWlkZGxlLWNvbHVtbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGZsZXg6IDE7IC8qIE1pdHRrb2x1bW5lbiB0YXIgbWluZHJlIHBsYXRzIMOkbiB2w6Ruc3RlciBtZW4gbWVyIMOkbiBow7ZnZXIgKi9cbiAgbWluLWhlaWdodDogNTAwcHg7IC8qIFPDpHR0ZXIgZW4gbWluaW1pIGjDtmpkIGbDtnIgYXR0IGfDtnJhIGtvbHVtbmVuIGF2bMOlbmcgKi9cbn1cblxuLyogU3R5bGluZyBmw7ZyIGjDtmdyYSBrb2x1bW5lbiAqL1xuLnJpZ2h0LWNvbHVtbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGZsZXg6IDE7IC8qIEjDtmdyYSBrb2x1bW5lbiB0YXIgbWluZHJlIHBsYXRzICovXG59XG5cbi8qIEp1c3RlcmluZyBhdiBrb3J0ZW4gKi9cbi5jYXJkIHtcbiAgd2lkdGg6IDEwMCU7IC8qIEtvcnRlbiBza2EgZnlsbGEgaGVsYSBrb2x1bW5lbnMgYnJlZGQgKi9cbiAgbWF4LXdpZHRoOiA2MDBweDsgLyogU8OkdHRlciBlbiBtYXhicmVkZCBmw7ZyIGtvcnRlbiAqL1xuICBtYXJnaW46IDE1cHggMDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2Y4ZjhmODtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBib3JkZXI6IDFweCBzb2xpZCAjZGRkOyAvKiBMw6R0dCByYW0gZsO2ciBlbiBtZXIgc3RpbHJlbiBsb29rICovXG4gIHRleHQtYWxpZ246IGxlZnQ7XG4gIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjJzIGVhc2UtaW4tb3V0O1xufVxuXG4uY2FyZDpob3ZlciB7XG4gIHRyYW5zZm9ybTogc2NhbGUoMS4wMik7XG59XG5cbi5jYXJkLWltYWdlIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTgwcHg7XG4gIG9iamVjdC1maXQ6IGNvdmVyO1xuICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2RkZDsgLyogVHlkbGlnYXJlIHNlcGFyYXRpb24gbWVsbGFuIGJpbGQgb2NoIHRleHQgKi9cbn1cblxuLmNhcmQtdGl0bGUge1xuICBmb250LXNpemU6IDEuMmVtO1xuICBtYXJnaW46IDEwcHggMTVweDtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIGNvbG9yOiAjMzMzO1xuICB0cmFuc2l0aW9uOiBib3JkZXItYm90dG9tIDAuM3MgZWFzZTsgLyogRsO2ciBhdHQgc2thcGEgZW4gc21pZGlnIMO2dmVyZ8OlbmcgZsO2ciBsaW5qZW4gKi9cbn1cblxuLyogSG92ZXItZWZmZWt0IGbDtnIgYXR0IGzDpGdnYSB0aWxsIGVuIGxpbmplIHVuZGVyIHRpdGVsbiAqL1xuLmNhcmQtdGl0bGU6aG92ZXIge1xuICBib3JkZXItYm90dG9tOiAycHggc29saWQgI0I5MEUwQTsgLyogTMOkZ2dlciB0aWxsIGVuIGxpbmplIHVuZGVyIHRpdGVsbiB2aWQgaG92ZXIgKi9cbn1cblxuLmNhcmQtZGVzY3JpcHRpb24ge1xuICBwYWRkaW5nOiAwIDE1cHggMTVweDtcbiAgY29sb3I6ICM2NjY7XG4gIGZvbnQtc2l6ZTogMC45ZW07XG59XG5cbi8qIFN0eWxpbmcgZsO2ciBmb290ZXIgKi9cbi5mb290ZXIge1xuICBwYWRkaW5nOiAyMHB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjRmNGY0O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5zcG9ydC1jb250ZW50IHtcbiAgcGFkZGluZzogMjBweDtcbn1cblxuLmhlYWRlci10aXRsZSB7XG4gIGZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmO1xuICBmb250LXNpemU6IDJyZW07XG4gIGNvbG9yOiAjMzMzO1xufVxuXG4ubGFyZ2UtdGV4dCB7XG4gIGZvbnQtZmFtaWx5OiAnVmVyZGFuYScsIHNhbnMtc2VyaWY7XG4gIGZvbnQtc2l6ZTogMS41cmVtO1xuICBsaW5lLWhlaWdodDogMS44O1xuICBjb2xvcjogIzQ0NDtcbn1cblxuLm1lZGl1bS10ZXh0IHtcbiAgZm9udC1mYW1pbHk6ICdHZW9yZ2lhJywgc2VyaWY7XG4gIGZvbnQtc2l6ZTogMS4ycmVtO1xuICBsaW5lLWhlaWdodDogMS42O1xuICBjb2xvcjogIzU1NTtcbn1cblxuLnNtYWxsLXRleHQge1xuICBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIHNlcmlmO1xuICBmb250LXNpemU6IDFyZW07XG4gIGxpbmUtaGVpZ2h0OiAxLjQ7XG4gIGNvbG9yOiAjNjY2O1xufVxuXG4uYm9sZC10ZXh0IHtcbiAgZm9udC1mYW1pbHk6ICdDb3VyaWVyIE5ldycsIG1vbm9zcGFjZTtcbiAgZm9udC1zaXplOiAxLjNyZW07XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBjb2xvcjogIzIyMjtcbn1cblxuLml0YWxpYy10ZXh0IHtcbiAgZm9udC1mYW1pbHk6ICdIZWx2ZXRpY2EnLCBzYW5zLXNlcmlmO1xuICBmb250LXNpemU6IDEuMXJlbTtcbiAgZm9udC1zdHlsZTogaXRhbGljO1xuICBjb2xvcjogIzc3Nztcbn1cblxuLyogU3R5bGluZyBmw7ZyIGJpbGRlciBvY2ggem9vbWZ1bmt0aW9uICovXG4udHJhbnNmb3JtLXdyYXBwZXIge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIG92ZXJmbG93OiBoaWRkZW47IC8qIEbDtnJoaW5kcmFyIGF0dCBpbm5laMOlbGxldCByaW5uZXIgdXRhbmbDtnIgKi9cbn1cblxuLmNhcm91c2VsLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgd2lkdGg6IDgwJTtcbiAgbWF4LXdpZHRoOiA4MDBweDtcbiAgbWFyZ2luOiAwIGF1dG87XG4gIG92ZXJmbG93OiBoaWRkZW47XG59XG5cbi5jYXJvdXNlbC1pbWFnZSB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IGF1dG87XG4gIHRyYW5zaXRpb246IG9wYWNpdHkgMC41cyBlYXNlO1xufVxuXG4uY2Fyb3VzZWwtY29udHJvbHMge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNTAlO1xuICB3aWR0aDogMTAwJTtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XG59XG5cbi5jYXJvdXNlbC1jb250cm9scyBidXR0b24ge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgYm9yZGVyOiBub25lO1xuICBwYWRkaW5nOiAxMHB4O1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi5jYXJvdXNlbC1jb250cm9scyBidXR0b246aG92ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuOCk7XG59XG5cbi8qIFN0eWxpbmcgZsO2ciB2w6Ruc3RyYSBrb2x1bW5lbiBiaWxkZXIgKi9cbi5sZWZ0LWNvbHVtbiAuY2FyZCBpbWcge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBvYmplY3QtZml0OiBjb3ZlcjsgLyogRsO2ciBhdHQgc8Oka2Vyc3TDpGxsYSBhdHQgYmlsZGVybmEgdMOkY2tlciBoZWxhIHV0cnltbWV0IHV0YW4gYXR0IGbDtnJ2csOkbmdhcyAqL1xufVxuXG4ubmV3cy10YWJsZSB7XG4gIHdpZHRoOiAxMDAlO1xuICBib3JkZXItY29sbGFwc2U6IGNvbGxhcHNlO1xuICBtYXJnaW4tdG9wOiAyMHB4O1xufVxuXG4ubmV3cy10YWJsZSB0aCwgLm5ld3MtdGFibGUgdGQge1xuICBwYWRkaW5nOiAxMnB4O1xuICB0ZXh0LWFsaWduOiBsZWZ0O1xuICBib3JkZXI6IDFweCBzb2xpZCAjZGRkO1xufVxuXG4ubmV3cy10YWJsZSB0aCB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmMmYyZjI7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style type="text/css">.transform-component-module_wrapper__SPB86 {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  transform: translate3d(0, 0, 0);
+}
+.transform-component-module_content__FBWxo {
+  display: flex;
+  flex-wrap: wrap;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  transform-origin: 0% 0%;
+}
+.transform-component-module_content__FBWxo img {
+  pointer-events: none;
+}
+</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div><header class="header"><img alt="Nyheter" class="header-image" src="./nyaversionpolitik_files/Nyheter.png"><div class="header-dateTime"><span>2025-04-22</span><span>16:15:23</span></div></header><nav class="navbar"><ul class="nav-list"><li><a href="http://localhost:3000/#" class="nav-link">Hem</a></li><li><a href="http://localhost:3000/#" class="nav-link">Ekonomi</a></li><li><a href="http://localhost:3000/#" class="nav-link">Sport</a></li><li><a href="http://localhost:3000/#" class="nav-link">Politik</a></li><li><a href="http://localhost:3000/#" class="nav-link">Nöje</a></li></ul></nav><div><div class="main-content"><div class="left-column"><div class="card"><div class="react-transform-wrapper transform-component-module_wrapper__SPB86 "><div class="react-transform-component transform-component-module_content__FBWxo " style="transform: translate(0px, 0px) scale(1);"><img alt="Synnedsatta upplever en sämre användarupplevelse" class="card-image" src="./nyaversionpolitik_files/stare.png"></div></div><h3 class="card-title">Synnedsatta upplever en sämre användarupplevelse</h3><p class="card-description">En kort beskrivning av nyheten.</p></div><div class="card"><div class="react-transform-wrapper transform-component-module_wrapper__SPB86 "><div class="react-transform-component transform-component-module_content__FBWxo " style="transform: translate(0px, 0px) scale(1);"><img alt="New Yorks biggest economy crisis in ten years" class="card-image" src="./nyaversionpolitik_files/newyork.png"></div></div><h3 class="card-title">New Yorks biggest economy crisis in ten years</h3><p class="card-description">En annan kort beskrivning.</p></div><div class="card"><div class="react-transform-wrapper transform-component-module_wrapper__SPB86 "><div class="react-transform-component transform-component-module_content__FBWxo " style="transform: translate(0px, 0px) scale(1);"><img alt="EU vägrar ha omröstning" class="card-image" src="./nyaversionpolitik_files/eu.png"></div></div><h3 class="card-title">EU vägrar ha omröstning</h3><p class="card-description">Ytterligare en beskrivning.</p></div></div><div class="middle-column"><div class="card"><div class="react-transform-wrapper transform-component-module_wrapper__SPB86 "><div class="react-transform-component transform-component-module_content__FBWxo " style="transform: translate(0px, 0px) scale(1);"><img alt="Nyhet 4" class="card-image" src="./nyaversionpolitik_files/egg.png"></div></div><h3 class="card-title">Nyhet 4</h3><p class="card-description">En fjärde nyhet.</p></div><div class="card"><div class="react-transform-wrapper transform-component-module_wrapper__SPB86 "><div class="react-transform-component transform-component-module_content__FBWxo " style="transform: translate(0px, 0px) scale(1);"><img alt="Nyhet 4" class="card-image" src="./nyaversionpolitik_files/nationellaprovet.png"></div></div><h3 class="card-title">Nyhet 4</h3><p class="card-description">En fjärde nyhet.</p></div><div class="card"><div class="react-transform-wrapper transform-component-module_wrapper__SPB86 "><div class="react-transform-component transform-component-module_content__FBWxo " style="transform: translate(0px, 0px) scale(1);"><img alt="Nyhet 4" class="card-image" src="./nyaversionpolitik_files/politik.png"></div></div><h3 class="card-title">Nyhet 4</h3><p class="card-description">En fjärde nyhet.</p></div></div><div class="right-column"><div class="card"><div class="react-transform-wrapper transform-component-module_wrapper__SPB86 "><div class="react-transform-component transform-component-module_content__FBWxo " style="transform: translate(0px, 0px) scale(1);"><img alt="Nyhet 5" class="card-image" src="./nyaversionpolitik_files/royalty.png"></div></div><h3 class="card-title">Nyhet 5</h3><p class="card-description">En femte nyhet.</p></div><div class="card"><div class="react-transform-wrapper transform-component-module_wrapper__SPB86 "><div class="react-transform-component transform-component-module_content__FBWxo " style="transform: translate(0px, 0px) scale(1);"><img alt="Nyhet 6" class="card-image" src="./nyaversionpolitik_files/slott.png"></div></div><h3 class="card-title">Nyhet 6</h3><p class="card-description">En sjätte nyhet.</p></div><div class="card"><div class="react-transform-wrapper transform-component-module_wrapper__SPB86 "><div class="react-transform-component transform-component-module_content__FBWxo " style="transform: translate(0px, 0px) scale(1);"><img alt="Nyhet 6" class="card-image" src="./nyaversionpolitik_files/pengar.png"></div></div><h3 class="card-title">Nyhet 6</h3><p class="card-description">En sjätte nyhet.</p></div></div></div></div><footer class="footer"><p>© 2025 Företagsnamn. Alla rättigheter reserverade.</p></footer></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>

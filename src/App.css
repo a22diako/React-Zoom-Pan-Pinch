@@ -1,38 +1,272 @@
-.App {
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+
+.header-image {
+  height: 60px;
+}
+
+
+.header-dateTime {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+
+/* navbar */
+.navbar {
+  background-color: #B90E0A;
+  padding: 10px;
+}
+
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+}
+
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+.nav-link:hover {
+  background-color: #9e0d0b;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+/* alla tre columns */
+.main-content {
+  display: flex;
+  justify-content: space-between; 
+  gap: 15px; 
+  padding: 20px;
+  flex-wrap: wrap; 
+}
+
+
+/* vänstra kolumnen */
+.left-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 200;
+  flex: 2; /* Vänster kolumn tar mer plats */
+}
+
+
+/* Styling för mittkolumnen (avlång) */
+.middle-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+  min-height: 500px; 
+}
+
+
+/* högra kolumnen */
+.right-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Högra kolumnen tar mindre plats */
+}
+
+
+/* Justering av korten */
+.card {
+  width: 100%; /* Korten ska fylla hela kolumnens bredd */
+  max-width: 600px; /* Sätter en maxbredd för korten */
+  margin: 15px 0;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Lätt ram för en mer stilren look */
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd; /* Tydligare separation mellan bild och text */
+}
+
+
+.card-title {
+  font-size: 1.2em;
+  margin: 10px 15px;
+  font-weight: bold;
+  color: #333;
+  transition: border-bottom 0.3s ease; /* För att skapa en smidig övergång för linjen */
+}
+
+
+/* Linje under titel */
+.card-title:hover {
+  border-bottom: 2px solid #B90E0A; /* Lägger till en linje under titeln vid hover */
+}
+
+
+.card-description {
+  padding: 0 15px 15px;
+  color: #666;
+  font-size: 0.9em;
+}
+
+
+/* Styling för footer */
+.footer {
+  padding: 20px;
+  background-color: #f4f4f4;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.sport-content {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.header-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.large-text {
+  font-family: 'Verdana', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+
+.medium-text {
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+.small-text {
+  font-family: 'Times New Roman', serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #666;
+}
+
+
+.bold-text {
+  font-family: 'Courier New', monospace;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #222;
+}
+
+
+.italic-text {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #777;
+}
+
+
+/* Styling för bilder och zoomfunktion */
+.transform-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Förhindrar att innehållet rinner utanför */
+}
+
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease;
+}
+
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+
+.carousel-controls button {
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+
+.carousel-controls button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Styling för vänstra kolumnen bilder */
+.left-column .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
 }
+
+
+.news-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+
+.news-table th, .news-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+
+.news-table th {
+  background-color: #f2f2f2;
+}
+
